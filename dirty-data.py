@@ -103,12 +103,29 @@ if __name__ == '__main__':
     df_messy.to_csv(output_file, index=False)
     print(f"\nMessy dataset saved as '{output_file}'")
 
-    # Hint: Uncomment for insights
+    # # Hint: Uncomment for insights
     # print("\nClean dataset info:")
     # print(df_clean.info())
+    # print(df_clean.describe())
 
     # print("\nMessy dataset info:")
     # print(df_messy.info())
 
     # print("\nSample of messy data:")
     # print(df_messy.sample(10))
+
+    # EDA on messy data
+    # print(df_messy.isnull().sum())
+    # print(df_clean.describe())
+    # print((df_messy.year).astype(float).describe())
+    # print(df_messy[df_messy.duplicated()])
+    
+    # print(df_messy.describe())
+    # print((df_messy.year).describe())
+
+    # print((df_messy.age).astype(float).describe())
+    # print((df_messy.gender).unique())
+
+    # print((df_messy.population).astype(float).describe())
+    # print((df_messy.income_groups).describe())
+
